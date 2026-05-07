@@ -32,6 +32,7 @@ const modules = [Autoplay, EffectFade, Navigation]
             :src="usePublicUrl(`img/${slide.image}`)"
             :alt="slide.alt"
             class="absolute inset-0 h-full w-full object-cover"
+            :style="{ objectPosition: slide.objectPosition ?? 'center center' }"
             loading="eager"
             fetchpriority="high"
           />
